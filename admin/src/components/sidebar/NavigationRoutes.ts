@@ -103,6 +103,24 @@ export default {
       ],
     },
     {
+      name: 'cryptocurrency',
+      displayName: 'menu.cryptocurrency',
+      meta: {
+        icon: 'work',
+      },
+      disabled: true,
+      children: [
+        {
+          name: 'cryptocurrency-all',
+          displayName: 'menu.cryptocurrency-all',
+        },
+        {
+          name: 'cryptocurrency-favorite',
+          displayName: 'menu.cryptocurrency-favorite',
+        },
+      ],
+    },
+    {
       name: 'bonds',
       displayName: 'menu.bonds',
       meta: {

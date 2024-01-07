@@ -361,6 +361,9 @@
     "futures": "Фьючерсы",
     "futures-all": "Все",
     "futures-favorite": "Избранные",
+    "cryptocurrency": "Криптовалюта",
+    "cryptocurrency-all": "Все Монеты",
+    "cryptocurrency-favorite": "Избранные Монеты",
     "calculators": "Калькуляторы",
     "calculators-stock-average": "Stock Average Calculator",
     "calculators-stock-aim-average": "Stock Aim Average Calculator",
@@ -375,7 +378,7 @@
     "my-finance-all": "Все",
     "my-finance-add": "Добавить",
     "bots": "Боты",
-    "bots-index": "Список ботов"  
+    "bots-index": "Список ботов"
   },
   "messages": {
     "all": "See all messages",

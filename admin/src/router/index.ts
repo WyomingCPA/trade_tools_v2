@@ -113,6 +113,23 @@ const routes: Array<RouteRecordRaw> = [
         ],
       },
       {
+        name: 'cryptocurrency',
+        path: 'cryptocurrency',
+        component: RouteViewComponent,
+        children: [
+          {
+            name: 'cryptocurrency-all',
+            path: 'cryptocurrency-all',
+            component: () => import('../pages/admin/cryptocurrency/Index.vue'),
+          },
+          {
+            name: 'cryptocurrency-favorite',
+            path: 'cryptocurrency-favorite',
+            component: () => import('../pages/admin/cryptocurrency/Favorite.vue'),
+          },
+        ],
+      },
+      {
         name: 'bonds',
         path: 'bonds',
         component: RouteViewComponent,

@@ -42,4 +42,34 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
     ];
+
+    public function favoritesBond()
+    {
+        return $this->belongsToMany(Bond::class, 'favorite_bonds', 'user_id', 'bond_id')->withTimeStamps();
+    }
+
+    public function trashBond()
+    {
+        return $this->belongsToMany(Bond::class, 'trash_bonds', 'user_id', 'bond_id')->withTimeStamps();
+    }
+
+    public function favoritesStock()
+    {
+        return $this->belongsToMany(Stock::class, 'stock_favorites', 'user_id', 'stock_id')->withTimeStamps();
+    }
+
+    public function favoritesEtf()
+    {
+        return $this->belongsToMany(Etf::class, 'etf_favorites', 'user_id', 'etf_id')->withTimeStamps();
+    }
+
+    public function favoritesFuture()
+    {
+        return $this->belongsToMany(Futures::class, 'futures_favorites', 'user_id', 'futures_id')->withTimeStamps();
+    }
+
+    public function favoritesCryptocurrency()
+    {
+        return $this->belongsToMany(Cryptocurrency::class, 'cryptocurrency_favorites', 'user_id', 'cryptocurrencies_id')->withTimeStamps();
+    }
 }
